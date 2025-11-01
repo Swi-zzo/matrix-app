@@ -1,5 +1,12 @@
 import streamlit as st
-import numpy as np
-import matplotlib.pyplot as plt
+from tabs import mul, det
 
-st.title("Calculator")
+st.title("Matrix Calculator")
+
+tab1, tab2 = st.tabs(["Multiplication", "Determinant"])
+
+with tab1:
+    mul.show()
+
+with tab2:
+    det.show()
